@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/2c13c677b6.js" crossorigin="anonymous"></script>
+    <title>Teyvat Culinaries</title>
+  </head>
+  <body>
+    <header>
+      <h1>Teyvat Culinaries</h1>
+      <p>If there's nothing better to do, why not have food so good you'll say "Oh My Archon"?</p>
+    </header>
+    <main>
+      <h1>Pick a region!</h1>
+      <article id="Mond" style="background: linear-gradient(0deg, #75c3a9 30%, rgba(255, 255, 255, 0) 80%)">
+        <h1 style="color: #75c3a9">Mondstadt</h1>
+        <p>
+          A city of freedom that lies in the northeast of Teyvat. From amongst mountains and wide-open plains, carefree breezes carry the scent of dandelions — a gift from the
+          Anemo God, Barbatos — across Cider Lake to Mondstadt, which sits on an island in the middle of the lake.
+        </p>
+        <a href="https://genshin-impact.fandom.com/wiki/Category:Mondstadt_Dishes">Recipes <i class="fa-solid fa-arrow-right-long"></i></a>
+      </article>
+      <article id="Liy" style="display: none; background: linear-gradient(0deg, #fab72e 30%, rgba(255, 255, 255, 0) 80%)">
+        <h1 style="color: #fab72e">Liyue</h1>
+        <p>
+          A bountiful harbor that lies in the east of Teyvat. Mountains stand tall and proud alongside the stone forest, that together with the open plains and lively rivers make
+          up Liyue's bountiful landscape, which shows its unique beauty through each of the four seasons. Just how many gifts from the Geo God lie in wait amongst the rocks of
+          Liyue's mountains?
+        </p>
+        <a href="https://genshin-impact.fandom.com/wiki/Category:Liyue_Dishes">Recipes <i class="fa-solid fa-arrow-right-long"></i></a>
+      </article>
+      <article id="Ina" style="display: none; background: linear-gradient(0deg, #b08fc2 30%, rgba(255, 255, 255, 0) 80%)">
+        <h1 style="color: #b08fc2">Inazuma</h1>
+        <p>
+          An Isolated Archipelago Far East of Teyvat Overcome endless thunderstorms and set foot on the islands of red maple and cherry blossoms. On winding shores and towering
+          cliffs, and in forests and mountains full of secrets, witness the Eternity pursued by Her Excellency, the Almighty Narukami Ogosho.
+        </p>
+        <a href="https://genshin-impact.fandom.com/wiki/Category:Inazuma_Dishes">Recipes <i class="fa-solid fa-arrow-right-long"></i></a>
+      </article>
+      <article id="Sume" style="display: none; background: linear-gradient(0deg, #a6c938 30%, rgba(255, 255, 255, 0) 80%)">
+        <h1 style="color: #a6c938">Sumeru</h1>
+        <p>
+          The city of scholars located in the west-central part of Teyvat. A fantastical nation of both lush rainforest and barren desert, where countless fruits of wisdom grow and
+          are buried. Whether Travelers travel from afar through the forest to reach the academy city or delve deep into the desert to discover the historical ruins of the red
+          desert, a wealth of valuable knowledge awaits them here.
+        </p>
+        <a href="https://genshin-impact.fandom.com/wiki/Category:Sumeru_Dishes">Recipes <i class="fa-solid fa-arrow-right-long"></i></a>
+      </article>
+      <div class="region">
+        <button onclick="toggleVisibility('Mond')" style="background-color: #75c3a9"><img src="./assets/mond.png" alt="mondstadt logo" /></button>
+        <button onclick="toggleVisibility('Liy')" style="background-color: #fab72e"><img src="./assets/liyue.png" alt="liyue logo" /></button>
+        <button onclick="toggleVisibility('Ina')" style="background-color: #b08fc2"><img src="./assets/inazuma.png" alt="inazuma logo" /></button>
+        <button onclick="toggleVisibility('Sume')" style="background-color: #a6c938"><img src="./assets/sumeru.png" alt="sumeru logo" /></button>
+      </div>
+      <div class="other">
+        <div class="popular">
+          <h1>Popular dishes:</h1>
+          <a href="https://genshin-impact.fandom.com/wiki/Apple_Cider"
+            ><img src="https://static.wikia.nocookie.net/gensin-impact/images/c/c3/Item_Apple_Cider.png" alt="Apple Cider"
+          /></a>
+          <a href="https://genshin-impact.fandom.com/wiki/Mondstadt_Grilled_Fish" class="hide"
+            ><img src="https://static.wikia.nocookie.net/gensin-impact/images/c/c9/Item_Mondstadt_Grilled_Fish.png" alt="Mondstadt Grilled Fish"
+          /></a>
+          <a href="https://genshin-impact.fandom.com/wiki/Adeptus%27_Temptation"
+            ><img src="https://static.wikia.nocookie.net/gensin-impact/images/5/5e/Item_Adeptus%27_Temptation.png" alt="Adeptus' Temptation"
+          /></a>
+          <a href="https://genshin-impact.fandom.com/wiki/Triple-Layered_Consomm%C3%A9" class="hide"
+            ><img src="https://static.wikia.nocookie.net/gensin-impact/images/b/be/Item_Triple-Layered_Consomm%C3%A9.png" alt="Triple-Layered Consommé"
+          /></a>
+          <a href="https://genshin-impact.fandom.com/wiki/Tricolor_Dango"
+            ><img src="https://static.wikia.nocookie.net/gensin-impact/images/5/52/Item_Tricolor_Dango.png" alt="Tricolor Dango"
+          /></a>
+          <a href="https://genshin-impact.fandom.com/wiki/Dango_Milk" class="hide"
+            ><img src="https://static.wikia.nocookie.net/gensin-impact/images/8/83/Item_Dango_Milk.png" alt="Dango Milk"
+          /></a>
+          <a href="https://genshin-impact.fandom.com/wiki/Tandoori_Roast_Chicken"
+            ><img src="https://static.wikia.nocookie.net/gensin-impact/images/6/67/Item_Tandoori_Roast_Chicken.png" alt="Tandoori Roast Chicken"
+          /></a>
+          <a href="https://genshin-impact.fandom.com/wiki/Butter_Chicken" class="hide"
+            ><img src="https://static.wikia.nocookie.net/gensin-impact/images/7/74/Item_Butter_Chicken.png" alt="Butter Chicken" /></a
+          ><br />
+          <h3><a href="https://genshin-impact.fandom.com/wiki/Category:Dishes_by_Region" style="text-decoration: underline">And many more!</a></h3>
+        </div>
+        <aside>
+          <h2 style="margin-bottom: 0.5em">Chef of this page</h2>
+          <h3>Dzikria</h3>
+          <img src="./assets/profile.jpg" alt="profile picture" style="border-radius: 100%; margin-top: 1em" />
+          <p style="font-size: 1em; margin-bottom: 1em">Claymore-users, healers, and anemo collector.</p>
+          <h4>Personal favorites:</h4>
+          <div class="person-fav">
+            <img src="https://static.wikia.nocookie.net/gensin-impact/images/e/e2/Item_Mushroom_Pizza.png" alt="mushroom pizza" class="mySlides fade" />
+            <img src="https://static.wikia.nocookie.net/gensin-impact/images/0/0f/Item_Stir-Fried_Filet.png" alt="stir fry" class="mySlides fade" />
+            <img src="https://static.wikia.nocookie.net/gensin-impact/images/e/ea/Item_Tonkotsu_Ramen.png" alt="tonkotsu ramen" class="mySlides fade" />
+          </div>
+        </aside>
+      </div>
+      <script src="./main.js"></script>
+    </main>
+    <footer>
+      <h3>
+        Made to complete "<a href="https://www.dicoding.com/academies/123/tutorials/4350">Submission: Tugas Akhir Membuat Website</a>" from
+        <a href="https://www.dicoding.com/" style="text-decoration: underline">Dicoding.com</a>
+      </h3>
+    </footer>
+  </body>
+</html>
